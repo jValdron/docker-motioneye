@@ -45,7 +45,7 @@ docker run -d \
         -p 80:8765 \
         -v /local_storage:/var/lib/motioneye \
         -v /etc/motioneye:/etc/motioneye \
-	-v /etc/motioneye/settings.py:/usr/local/lib/python2.7/dist-packages/motioneye/settings.py \
+        -v /etc/motioneye/settings.py:/usr/local/lib/python2.7/dist-packages/motioneye/settings.py \
         --name motioneye \
         --restart=always \
         motioneye
