@@ -1,8 +1,8 @@
-### docker-motioneye
+## docker-motioneye
 A debian based Dockerfile which grabs the latest version of Motioneye 
 from Git.
 
-#### Building the image
+### Building the image
 Clone this repo and then build like so:
 
 ```bash
@@ -10,7 +10,7 @@ git clone https://github.com/jValdron/docker-motioneye.git
 docker built -t motioneye .		# or any other name than motioneye
 ```
 
-#### Creating a new container
+### Creating a new container
 Spin up a new container like so:
 
 ```bash
@@ -31,7 +31,7 @@ Whenever you want to update to the latest version of motioneye, you can
 just delete the image using `docker rmi motioneye` and then rebuild it 
 using `--nocache` to update packages.
 
-##### Running behind a reverse proxy (or overriding any other settings)
+#### Running behind a reverse proxy (or overriding any other settings)
 If you want to run motioneye behind a reverse proxy, you need to override 
 the default settings.py file. To do so, copy the [latest settings.py]
 (https://github.com/ccrisan/motioneye/blob/master/motioneye/settings.py)
